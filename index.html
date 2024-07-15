@@ -4,12 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/style.css">
     <script src="JS/script.js" defer></script>
 </head>
-<body>
+<body class="bg-light">
+
+    <h1 class="text-center">Shopping Cart </h1>
+
+    <div class="container my-5">
+    
+        <!-- Cart Item 1 -->
+
+        <div class="row bg-white">
+                <div class="col-md-3">
+                   <img src="https://www.techlandbd.com/image/catalog/Laptop/Apple/Macbook-pro/M1%20chip/space-gray/macbook-pro-space-gray-2.jpg"  class="img-fluid mx-auto d-flex my-5" width="150"  alt="Mackbook Image">
+                   <h5 class="text-center text-muted">Macbook Pro 2021</h5> 
+                </div>
+
+                <div class="col-md-4">
+                    
+                    <div class="d-flex align-items-center mt-5 pt-5">
+                        <button class="btn btn-success m-2">Add</button>
+
+                    <input type="number" class="form-control text-center " value="1">
+
+                    <button class="btn btn-danger m-2">Remove</button>
+                    </div>
+                    
+
+                    
+                </div>
+
+                <div class="col-md-5 align-items-center mt-5 pt-5">
+                  <h5 class="text-center text-muted">৳<span>245000</span></h5>  
+                </div>
+        </div>
+
+
+
+        <!-- Cart Item 2 -->
+
+           <div class="row bg-white my-5">
+                <div class="col-md-3">
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPP6M6wUQSsSsfZ671ryCnMuC31lxzqL7QFw&s"  class="img-fluid mx-auto d-flex my-5" width="150"  alt="Iphone !3 pro max">
+                   <h5 class="text-center text-muted">iPhone 13 Pro Max</h5> 
+                </div>
+
+                <div class="col-md-4">
+                    
+                    <div class="d-flex align-items-center mt-5 pt-5">
+                        <button class="btn btn-success m-2">Add</button>
+
+                    <input type="number" class="form-control text-center " value="1">
+
+                    <button class="btn btn-danger m-2">Remove</button>
+                    </div>
+                    
+
+                    
+                </div>
+
+                <div class="col-md-5 align-items-center mt-5 pt-5">
+                  <h5 class="text-center text-muted">৳<span>176999</span></h5>  
+                </div>
+        </div>
+
+
+
+
+        <!-- Total Item Count -->
+
+        <div class="d-flex bg-white p-3">
+            <div class="col-md-8">
+
+                <h5>Subtotal:</h5>
+                <h5>Tax:</h5>
+                <h5>Grand Total:</h5>
+
+            </div>
+
+            <div class="col-md-4 ps-5">
+                <h5>৳ <span>421999</span></h5>
+                <h5>৳ <span>0</span></h5>
+                <h5>৳ <span>421999</span></h5>
+            </div>
+        </div>
+
+
+        <button class="btn btn-info text-white fw-bold mt-2 mx-3" >Checkout</button>
+
+
+    </div>
+
+
+
+
+
+
+    <!-- Footer -->
+
+     <footer class="footer bg-danger">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+
+
+            <div class="col-md-4 mt-4 col-lg-4 text-center">
+              <div class="contact mx-5">
+                  <h6 class="footer-heading text-uppercase text-white fw-bold">Contact Us</h6>
+                  <address class="mt-4 m-0 text-white mb-1"><i class="bi bi-pin-map fw-semibold"></i> Mirpur 2, Dhaka , 1216</address>
+                  <a target="_blank" href="phone:+88" class="text-white mb-1 text-decoration-none d-block fw-semibold"><i class="bi bi-telephone"></i>  +8801581184846</a>
+                  <a target="_blank" href="mailto:" class="text-white mb-1 text-decoration-none d-block fw-semibold"><i class="bi bi-envelope"></i> murad.my00@gmail.com</a>
+              </div>
+            </div>
+
+
+            <div class="col-md-4">
+
+            </div>
+
+        </div>
+    </div>
+    <div class="text-center bg-dark text-white mt-4 p-1">
+        <p class="mb-0 fw-bold">2024 © <a href="https://muradmy00.github.io/My-Portfolio/" target="_blank">Murad00</a>, All Rights Reserved</p>
+    </div>
+  </footer>
+
+
 
     
-    
-</body>
+</body> 
 </html>
