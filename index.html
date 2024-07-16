@@ -18,18 +18,18 @@
 
         <div class="row bg-white">
                 <div class="col-md-3">
-                   <img src="https://www.techlandbd.com/image/catalog/Laptop/Apple/Macbook-pro/M1%20chip/space-gray/macbook-pro-space-gray-2.jpg"  class="img-fluid mx-auto d-flex my-5" width="150"  alt="Mackbook Image">
+                   <img src="https://www.techlandbd.com/image/catalog/Laptop/Apple/Macbook-pro/M1%20chip/space-gray/macbook-pro-space-gray-2.jpg"  class="img-fluid mx-auto d-flex my-5" width="150"  alt="Macbook Image">
                    <h5 class="text-center text-muted">Macbook Pro 2021</h5> 
                 </div>
 
                 <div class="col-md-4">
                     
                     <div class="d-flex align-items-center mt-5 pt-5">
-                        <button class="btn btn-success m-2">Add</button>
+                        <button onclick="handle(laptop,true)" class="btn btn-success m-2">Add</button>
 
-                    <input type="number" class="form-control text-center " value="1">
+                    <input id="phone" type="number" class="form-control text-center " value="1">
 
-                    <button class="btn btn-danger m-2">Remove</button>
+                    <button onclick="handle(laptop,false)" class="btn btn-danger m-2">Remove</button>
                     </div>
                     
 
@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="col-md-5 align-items-center mt-5 pt-5">
-                  <h5 class="text-center text-muted">৳<span>245000</span></h5>  
+                  <h5 class="text-center text-muted">৳<span class="laptop-total">245000</span></h5>  
                 </div>
         </div>
 
@@ -54,11 +54,11 @@
                 <div class="col-md-4">
                     
                     <div class="d-flex align-items-center mt-5 pt-5">
-                        <button class="btn btn-success m-2">Add</button>
+                        <button    onclick="handle(laptop,true)" class="btn btn-success m-2">Add</button>
 
-                    <input type="number" class="form-control text-center " value="1">
+                    <input id="laptop" type="number" class="form-control text-center " value="1">
 
-                    <button class="btn btn-danger m-2">Remove</button>
+                    <button  onclick="handle(laptop,false)" class="btn btn-danger m-2">Remove</button>
                     </div>
                     
 
@@ -66,7 +66,7 @@
                 </div>
 
                 <div class="col-md-5 align-items-center mt-5 pt-5">
-                  <h5 class="text-center text-muted">৳<span>176999</span></h5>  
+                  <h5 class="text-center text-muted">৳<span class="phone-total">176999</span></h5>  
                 </div>
         </div>
 
