@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
+
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/4219/4219909.png" type="image/x-icon">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="CSS/style.css">
+
     <script src="JS/script.js" defer></script>
+    
 </head>
 <body class="bg-light">
 
@@ -25,11 +32,11 @@
                 <div class="col-md-4">
                     
                     <div class="d-flex align-items-center mt-5 pt-5">
-                        <button onclick="handle(laptop,true)" class="btn btn-success m-2">Add</button>
+                        <button onclick="handle('laptop',true)" class="btn btn-success m-2">Add</button>
 
-                    <input id="phone" type="number" class="form-control text-center " value="1">
+                    <input id="laptop" type="text" class="form-control text-center " value="1">
 
-                    <button onclick="handle(laptop,false)" class="btn btn-danger m-2">Remove</button>
+                    <button onclick="handle('laptop',false)" class="btn btn-danger m-2">Remove</button>
                     </div>
                     
 
@@ -37,7 +44,7 @@
                 </div>
 
                 <div class="col-md-5 align-items-center mt-5 pt-5">
-                  <h5 class="text-center text-muted">৳<span class="laptop-total">245000</span></h5>  
+                  <h5 class="text-center text-muted">৳<span id="laptop-total">245000</span></h5>  
                 </div>
         </div>
 
@@ -54,11 +61,11 @@
                 <div class="col-md-4">
                     
                     <div class="d-flex align-items-center mt-5 pt-5">
-                        <button    onclick="handle(laptop,true)" class="btn btn-success m-2">Add</button>
+                        <button    onclick="handle('phone',true)" class="btn btn-success m-2">Add</button>
 
-                    <input id="laptop" type="number" class="form-control text-center " value="1">
+                    <input id="phone" type="text" class="form-control text-center " value="1">
 
-                    <button  onclick="handle(laptop,false)" class="btn btn-danger m-2">Remove</button>
+                    <button  onclick="handle('phone',false)" class="btn btn-danger m-2">Remove</button>
                     </div>
                     
 
@@ -66,7 +73,7 @@
                 </div>
 
                 <div class="col-md-5 align-items-center mt-5 pt-5">
-                  <h5 class="text-center text-muted">৳<span class="phone-total">176999</span></h5>  
+                  <h5 class="text-center text-muted">৳<span id="phone-total">176999</span></h5>  
                 </div>
         </div>
 
@@ -85,14 +92,14 @@
             </div>
 
             <div class="col-md-4 ps-5">
-                <h5>৳ <span>421999</span></h5>
-                <h5>৳ <span>0</span></h5>
-                <h5>৳ <span>421999</span></h5>
+                <h5>৳ <span id="sub_total">421999</span></h5>
+                <h5>৳ <span id="tax_amount">0</span></h5>
+                <h5>৳ <span id="grand_total">421999</span></h5>
             </div>
         </div>
 
 
-        <button class="btn btn-info text-white fw-bold mt-2 mx-3" >Checkout</button>
+        <button onclick="Checkout()" class="btn btn-info text-white fw-bold mt-2 mx-3" >Checkout</button>
 
 
     </div>
